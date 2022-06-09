@@ -71,14 +71,11 @@ body {
 
 /* Pages */
 .page-header {
-
 	color: #000000;
 	font-weight: 700;
 }
 
 .navigation-link {
-
-
 	font-size: 20px;
 	line-height: 26px;
 	text-decoration: none;
@@ -87,8 +84,6 @@ body {
 }
 
 .main-index {
-
-
 	background-image: url("../images/index-background.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -96,7 +91,6 @@ body {
 }
 
 .sedona-title {
-
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 700;
@@ -105,7 +99,6 @@ body {
 }
 
 .sedona-description {
-
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
@@ -125,7 +118,6 @@ body {
 }
 
 .sedona-city-text-title {
-
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -133,7 +125,6 @@ body {
 }
 
 .sedona-city-text-description {
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
@@ -145,12 +136,10 @@ body {
 }
 
 .road {
-
 	background-color: rgba(131, 179, 211, 0.2);
 }
 
 .attractions-title {
-
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -159,7 +148,6 @@ body {
 }
 
 .attractions-description {
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
@@ -173,7 +161,6 @@ body {
 }
 
 .diablo-bridge-text-title {
-
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -181,14 +168,12 @@ body {
 }
 
 .diablo-bridge-text-description {
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
 }
 
 .attractions-title {
-
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -196,7 +181,6 @@ body {
 }
 
 .attractions-number {
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
@@ -204,7 +188,6 @@ body {
 }
 
 .attractions-description {
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
@@ -214,11 +197,9 @@ body {
 /* Search */
 .search {
 	text-align: center;
-
 }
 
 .search-title {
-
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
@@ -226,7 +207,6 @@ body {
 }
 
 .search-description {
-
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
@@ -244,7 +224,6 @@ body {
 }
 
 .subscribe-title {
-
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
@@ -252,7 +231,6 @@ body {
 }
 
 .subscribe-description {
-
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
@@ -261,28 +239,24 @@ body {
 /*catalog.html*/
 .main-inner {
 	color: #ffffff;
-
 	background-image: url("../images/catalog-background.jpg");
 	background-size: 1200px 403px;
 	background-repeat: no-repeat;
 }
 
 .inner-header-title {
-
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 78px;
 }
 
 .breadcrumbs {
-
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 21px;
 }
 
 .catalog-filter-title {
-
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 26px;
@@ -290,14 +264,12 @@ body {
 }
 
 .control {
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
 }
 
 .title-hotel {
-
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
@@ -314,7 +286,6 @@ body {
 }
 
 .hotel-card-title {
-
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -323,7 +294,6 @@ body {
 }
 
 .hotel-card-hotel {
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
@@ -331,7 +301,6 @@ body {
 }
 
 .hotel-card-price {
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
@@ -339,7 +308,6 @@ body {
 }
 
 .hotel-raiting-text {
-
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 20px;
@@ -350,7 +318,6 @@ body {
 }
 
 .hotel-page {
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
@@ -358,7 +325,6 @@ body {
 }
 
 .select-hotel-sort {
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
@@ -368,7 +334,6 @@ body {
 .subscribe-subscribe {
 	text-align: center;
 	color: #000000;
-
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	Width: 1200px;
@@ -376,7 +341,6 @@ body {
 }
 
 .subscribe-title-subscribe {
-
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
@@ -385,7 +349,6 @@ body {
 }
 
 .subscribe-description-subscribe {
-
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
@@ -393,7 +356,6 @@ body {
 }
 
 .footer-contacts-address-phone {
-
 	font-weight: 400;
 	font-size: 40px;
 	line-height: 40px;
