@@ -76,7 +76,10 @@ body {
 	width: 1060px;
 	margin: 0 auto;
 }
-
+.navigation-logo{
+	width:140px;
+	margin-right:50px;
+}
 .navigation-list {
 	margin: 0;
 	padding: 0;
@@ -144,24 +147,25 @@ body {
 
 /* List */
 .attractions-list {
-	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-
+display: flex;
+flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 }
 
 .sedona-city-text {
-	display: flex;
-	flex-direction: row;
+display:flex;
+flex-direction: row;
+margin: 0;
+padding: 0;
 	text-transform: uppercase;
 	background-color: #82B3D3;
 	color: #FFFFFF;
 }
 
 .sedona-city-text-title {
+
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -175,7 +179,6 @@ body {
 	line-height: 21px;
 }
 
-
 .attraction {
 	background-color: rgba(131, 179, 211, 0.12);
 
@@ -186,6 +189,7 @@ body {
 }
 
 .attractions-title {
+
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -201,8 +205,10 @@ body {
 }
 
 .diablo-bridge-text {
-	display: flex;
+	display:flex;
 	flex-direction: row-reverse;
+	margin: 0;
+	padding: 0;
 	text-transform: uppercase;
 	background-color: #82B3D3;
 	color: #FFFFFF;
@@ -320,6 +326,9 @@ body {
 }
 
 .breadcrumbs {
+	display:flex;
+	margin:0;
+	padding:0;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 21px;
@@ -337,7 +346,10 @@ body {
 	font-size: 18px;
 	line-height: 21px;
 }
-
+.search-hotels-search{
+	display:flex;
+	justify-content: space-evenly;
+}
 .title-hotel {
 	font-weight: 700;
 	font-size: 30px;
@@ -352,6 +364,10 @@ body {
 	font-size: 18px;
 	line-height: 21px;
 	color: #333333;
+}
+.hotel-list{
+	display:flex;
+	flex-wrap: wrap;
 }
 
 .hotel-card-title {
@@ -385,7 +401,14 @@ body {
 	color: #333333;
 	background-color: #F2F2F2;
 }
-
+/* pagination */
+.page-pagination{
+	display:flex;
+}
+.pagination{
+	display:flex;
+	gap:8px;
+}
 .hotel-page {
 	font-weight: 400;
 	font-size: 18px;
