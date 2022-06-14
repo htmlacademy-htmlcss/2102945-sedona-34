@@ -76,10 +76,12 @@ body {
 	width: 1060px;
 	margin: 0 auto;
 }
-.navigation-logo{
-	width:140px;
-	margin-right:50px;
+
+.navigation-logo {
+	width: 140px;
+	margin-right: 50px;
 }
+
 .navigation-list {
 	margin: 0;
 	padding: 0;
@@ -122,13 +124,12 @@ body {
 
 .sedona {
 	display: grid;
-	gap: 166px;
+	padding-top: 146px;
 	width: 700px;
 	margin: 0 auto;
 }
 
 .sedona-title {
-
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 700;
@@ -147,25 +148,24 @@ body {
 
 /* List */
 .attractions-list {
-display: flex;
-flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 }
 
 .sedona-city-text {
-display:flex;
-flex-direction: row;
-margin: 0;
-padding: 0;
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
 	text-transform: uppercase;
 	background-color: #82B3D3;
 	color: #FFFFFF;
 }
 
 .sedona-city-text-title {
-
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -173,7 +173,6 @@ padding: 0;
 }
 
 .sedona-city-text-description {
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
@@ -189,7 +188,6 @@ padding: 0;
 }
 
 .attractions-title {
-
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -205,7 +203,7 @@ padding: 0;
 }
 
 .diablo-bridge-text {
-	display:flex;
+	display: flex;
 	flex-direction: row-reverse;
 	margin: 0;
 	padding: 0;
@@ -326,9 +324,9 @@ padding: 0;
 }
 
 .breadcrumbs {
-	display:flex;
-	margin:0;
-	padding:0;
+	display: flex;
+	margin: 0;
+	padding: 0;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 21px;
@@ -346,10 +344,12 @@ padding: 0;
 	font-size: 18px;
 	line-height: 21px;
 }
-.search-hotels-search{
-	display:flex;
+
+.search-hotels-search {
+	display: flex;
 	justify-content: space-evenly;
 }
+
 .title-hotel {
 	font-weight: 700;
 	font-size: 30px;
@@ -365,8 +365,9 @@ padding: 0;
 	line-height: 21px;
 	color: #333333;
 }
-.hotel-list{
-	display:flex;
+
+.hotel-list {
+	display: flex;
 	flex-wrap: wrap;
 }
 
@@ -401,14 +402,17 @@ padding: 0;
 	color: #333333;
 	background-color: #F2F2F2;
 }
+
 /* pagination */
-.page-pagination{
-	display:flex;
+.page-pagination {
+	display: flex;
 }
-.pagination{
-	display:flex;
-	gap:8px;
+
+.pagination {
+	display: flex;
+	gap: 8px;
 }
+
 .hotel-page {
 	font-weight: 400;
 	font-size: 18px;
@@ -422,7 +426,7 @@ padding: 0;
 	line-height: 21px;
 	color: #333333;
 }
-
+/* subscribe */
 .subscribe-subscribe {
 	text-align: center;
 	color: #000000;
@@ -446,7 +450,7 @@ padding: 0;
 	line-height: 26px;
 	color: #000000;
 }
-
+/* footer */
 .footer-contacts-address-phone {
 	font-weight: 400;
 	font-size: 40px;
