@@ -42,7 +42,8 @@
             </ul>
          </nav>
       </header>
-      <main class="main-inner">
+      <main class="main-container main-inner">
+         <div class="page-container">
          <h1 class="inner-header-title">Гостиницы Седоны</h1>
          <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -53,7 +54,7 @@
             </li>
          </ul>
          <section class="catalog-hotels">
-            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+            <!-- <h2 class="visually-hidden">Список гостиниц с фильтрами</h2> -->
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                <div class="catalog-filter-group">
                   <p class="catalog-filter-title">Инфраструктура:</p>
@@ -78,8 +79,8 @@
                <!-- Тут ползунок с ценой -->
             </div>
             <div class="catalog-buttons">
-               <button class="button catalog-button" type="submit">Применить</button>
-               <button class="button catalog-button" type="reset">Сбросить</button>
+               <button class="button" type="submit">Применить</button>
+               <button class="button" type="reset">Сбросить</button>
             </div>
          </section>
          <section class="searh-hotels">
@@ -92,7 +93,6 @@
                      <option value="expensive">Сначала дорогие</option>
                   </select>
                </div>
-            </div>
             <a href="#" class="button-table">
                <img class="button-logo" src="images/table.svg" widht="16px" height="14px" alt="table">
                <span class="visually-hidden">Показать таблицу</span>
@@ -105,6 +105,7 @@
                <img class="button-logo" src="images/list.svg" widht="16px" height="14px" alt="list">
                <span class="visually-hidden">Показать список</span>
             </a>
+            </div>
             <ul class="hotel-list">
                <li class="hotel-card">
                   <a class="hotel-card-link" href="hotel.html">
@@ -228,8 +229,10 @@
                </button>
             </form>
          </section>
+         </div>
       </main>
       <footer class="page-footer">
+         <div class="page-footer-container">
          <section class="footer-social">
             <ul class="footer-social-list">
                <li class="footer-social-item">
@@ -260,6 +263,7 @@
          <section class="footer-academy">
             <a href=" https://htmlacademy.ru/"><img class="html-academy" src="images/academy.svg" widht="114.9px" height="32.9px" alt="htmlacademy"></a>
          </section>
+         </div>
       </footer>
    </body>
 </html>
