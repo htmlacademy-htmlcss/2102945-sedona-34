@@ -29,6 +29,19 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+ul {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* buttons */
 .button {
@@ -73,18 +86,26 @@ body {
 
 .navigation {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
+
 }
 
 .navigation-logo {
   width: 140px;
+  height: 70px;
   margin-right: 50px;
+
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   width: 450px;
 }
 
@@ -94,6 +115,7 @@ body {
 }
 
 .navigation-link {
+  display: block;
   font-size: 20px;
   line-height: 26px;
   text-decoration: none;
@@ -113,19 +135,19 @@ body {
 }
 
 .page-container {
-  width: 1060px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .welcome-logo {
   display: block;
+  padding-top: 51px;
   margin: 0 auto;
 }
 
 .sedona {
-  display: grid;
-  padding-top: 146px;
-  width: 700px;
+  display: block;
+  padding-top: 200px;
   margin: 0 auto;
 }
 
@@ -147,22 +169,33 @@ body {
 
 
 /* List */
+
+
+.sedona-city {
+  padding-top: 90px;
+}
+
 .attractions-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .sedona-city-text {
   display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
   text-transform: uppercase;
   background-color: #82B3D3;
   color: #FFFFFF;
+}
+
+.sedona-city-txt {
+  display: grid;
+  padding-top: 70px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 .sedona-city-text-title {
@@ -179,7 +212,9 @@ body {
 }
 
 .sedona-city-img {
-  display: flex;
+
+  width: 800px;
+  height: 384px;
 }
 
 .attraction {
@@ -189,6 +224,14 @@ body {
 
 .road {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.attractions-items {
+  display: grid;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 .attractions-title {
@@ -256,6 +299,8 @@ body {
 
 /* Search */
 .search {
+  padding-top:91px;
+  padding-bottom:93px;
   text-align: center;
   width: 700px;
   margin: 0 auto;
@@ -283,7 +328,9 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1200px;
+  height: 411px;
   margin: 0 auto;
+  padding-top:94px;
 }
 
 .subscribe-title {
@@ -302,18 +349,20 @@ body {
 /*footer*/
 .page-footer-container {
   display: flex;
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
+padding-bottom:30px;
 }
 
 .footer-social-list {
-  width: 100px;
+  display:flex;
+  justify-content: space-between;
+  width: 140px;
   margin-right: 250px;
 }
 
 .footer-academy {
   margin-left: auto;
-  padding-top: 50px;
   max-width: 120px;
 }
 
