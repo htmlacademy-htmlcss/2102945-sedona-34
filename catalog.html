@@ -9,11 +9,10 @@
 
   <body>
     <header class="page-header">
-      <div class="navigation-main-logo">
-        <a href="#"><img class="navigation-logo" src="images/logo.png" widht="139px" height="70px" alt="CityofSedona">
-        </a>
-      </div>
       <nav class="navigation">
+      <a class="navigation-logo" href="/index.html">
+        <img src="images/logo.png" alt="CityofSedona">
+      </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -56,9 +55,9 @@
           </li>
         </ul>
         <section class="catalog-hotels">
-          <!-- <h2 class="visually-hidden">Список гостиниц с фильтрами</h2> -->
+         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="catalog-filter-group">
+            <div class="catalog-filter-infra">
               <p class="catalog-filter-title">Инфраструктура:</p>
               <label for="pool" type="text" class="control"> Бассейн</label>
               <input class="control-input" type="checkbox" id="pool" name="pool" checked>
@@ -67,7 +66,7 @@
               <label for="wifi" type="text" class="control">Wi-Fi</label>
               <input class="control-input" id="wifi" type="checkbox" name="wifi">
             </div>
-            <div class="catalog-filter-group">
+            <div class="catalog-filter-infra">
               <p class="catalog-filter-title">Тип жилья:</p>
               <label for="hotel" type="text" class="control">Гостиница</label>
               <input class="control-input" id="hotel" type="radio" name="product-group" checked>
@@ -118,7 +117,7 @@
               </a>
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               <span class="hotel-card-hotel">Гостиница</span>
-              <span class="hotel-card-price">От 4000 ₽</span>
+              <span class="hotel-card-hotel">От 4000 ₽</span>
               <a class="button" href="#">подробнее</a>
               <a class="hotel-card-button button" href="#">в избранное</a>
               <div class="hotel-rating">
@@ -138,10 +137,12 @@
                 </div>
               </a>
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+              <div class="hotel-card-decr">
               <span class="hotel-card-hotel">Гостиница</span>
-              <span class="hotel-card-price">От 5000 ₽</span>
+              <span class="hotel-card-hotel">От 5000 ₽</span>
               <a class="button" href="#">подробнее</a>
               <a class="hotel-card-button button" href="#">в избранное</a>
+              </div>
               <div class="hotel-rating">
                 <ul class="hotel-rating-list">
                   <li>
@@ -159,7 +160,7 @@
               </a>
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
               <span class="hotel-card-hotel">Гостиница</span>
-              <span class="hotel-card-price">От 2500 ₽</span>
+              <span class="hotel-card-hotel">От 2500 ₽</span>
               <a class="button" href="#">подробнее</a>
               <a class="hotel-card-button button" href="#">в избранное</a>
               <div class="hotel-rating">
@@ -179,7 +180,7 @@
               </a>
               <h3 class="hotel-card-title">GreenTree Inn</h3>
               <span class="hotel-card-hotel">Гостиница</span>
-              <span class="hotel-card-price">От 1500 ₽</span>
+              <span class="hotel-card-hotel">От 1500 ₽</span>
               <a class="button" href="#">подробнее</a>
               <a class="hotel-card-button button" href="#">в избранное</a>
               <div class="hotel-rating">
@@ -213,8 +214,8 @@
                 <a class="page-link" href="#">10</a>
               </li>
             </ul>
-            <span class="hotel-page">Гостиниц на странице:</span>
             <div class="select-hotel-sort">
+              <span class="hotel-page">Гостиниц на странице:</span>
               <select class="select-hotel" name="Сортировка">
                 <option value="4">4</option>
                 <option value="6">6</option>
@@ -225,7 +226,7 @@
         </section>
         <section class="subscribe-subscribe">
           <h2 class="subscribe-title-subscribe">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description-subscribe">Только полезная информация и никакого спама, честное бойскаутское!
+          <p class="subscribe-description-subscribe">Только полезная информация и никакого спама,<br> честное бойскаутское!
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscribe-email">Email</label>
@@ -264,7 +265,6 @@
         <section class="footer-contacts">
           <h2 class="visually-hidden">Номер телефона</h2>
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
         </section>
         <section class="footer-academy">
           <a href=" https://htmlacademy.ru/"><img class="html-academy" src="images/academy.svg" widht="114.9px"
