@@ -105,9 +105,8 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   width: 450px;
   list-style: none;
 }
@@ -119,6 +118,7 @@ body {
 
 .navigation-link {
   display: block;
+  padding: 20px;
   font-size: 20px;
   line-height: 26px;
   text-decoration: none;
@@ -126,15 +126,22 @@ body {
   color: #000000;
 }
 
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+}
+
 .main-container {
   flex-grow: 1;
+  padding-top: 52px;
+  padding-bottom: 45px;
 }
 
 .main-index {
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-
+  margin: 0 auto;
 }
 
 .page-container {
@@ -144,17 +151,17 @@ body {
 
 .welcome-logo {
   display: block;
-  padding-top: 51px;
   margin: 0 auto;
 }
 
 .sedona {
   display: block;
-  padding-top: 200px;
+  padding-top: px;
   margin: 0 auto;
 }
 
 .sedona-title {
+  padding-top: 146px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -189,16 +196,14 @@ body {
 
 .sedona-city-text {
   display: flex;
-  text-transform: uppercase;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
 
 .sedona-city-txt {
-  display: grid;
-  padding-top: 70px;
-  padding-left: 85px;
-  padding-right: 85px;
+  display: flex;
+  flex-direction: column;
+  padding: 85px;
 }
 
 .sedona-city-text-title {
@@ -212,29 +217,32 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+
 }
 
 .sedona-city-img {
-
   width: 800px;
   height: 384px;
 }
 
 .attraction {
   background-color: rgba(131, 179, 211, 0.12);
-
+  ;
 }
 
-.road {
+.diablo-attraction {
+  padding: 103px 85px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.diablo-road {
+  padding: 103px 85px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .attractions-items {
   display: grid;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 80px 85px;
 }
 
 .attractions-title {
@@ -257,7 +265,6 @@ body {
   flex-direction: row-reverse;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -494,14 +501,33 @@ body {
 
 .pagination {
   display: flex;
-  gap: 8px;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.page-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.page-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 23px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
 }
 
 .page-link-main {
   color: #000000;
   font-size: 20px;
   font-weight: 700;
+  background-color: #F2F2F2;
 }
 
 .hotel-page {
