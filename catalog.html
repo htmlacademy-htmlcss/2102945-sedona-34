@@ -57,27 +57,33 @@
         </ul>
         <section class="catalog-hotels">
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-          <div class="catalog-filter-infra">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <p class="catalog-filter-title">Инфраструктура:</p>
-              <label class="control"> Бассейн <input class="control-input" type="checkbox" name="pool" checked> </label>
-              <label class="control">Парковка <input class="control-input" type="checkbox" name="carpark"
-                  checked></label>
-              <label class="control">Wi-Fi <input class="control-input" type="checkbox" name="wifi"></label>
-              <p class="catalog-filter-title">Тип жилья:</p>
-              <label class="control">Гостиница<input class="control-input" type="radio" name="product-group"
-                  checked></label>
-              <label class="control">Мотель<input class="control-input" type="radio" name="product-group"></label>
-              <label class="control">Апартаменты<input class="control-input" type="radio" name="product-group"></label>
-            </div>
+            <ul class="catalog-filter-container">
+              <li class="catalog-wrapper">
+                <p class="catalog-filter-title">Инфраструктура:</p>
+                <label class="control">Бассейн <input class="control-input" type="checkbox" name="pool" checked>
+                </label>
+                <label class="control">Парковка <input class="control-input" type="checkbox" name="carpark"
+                    checked></label>
+                <label class="control">Wi-Fi <input class="control-input" type="checkbox" name="wifi"></label>
+              </li>
+              <li class="catalog-wrapper">
+                <p class="catalog-filter-title">Тип жилья:</p>
+                <label class="control">Гостиница<input class="control-input" type="radio" name="product-group"
+                    checked></label>
+                <label class="control">Мотель<input class="control-input" type="radio" name="product-group"></label>
+                <label class="control">Апартаменты<input class="control-input" type="radio"
+                    name="product-group"></label>
+              </li>
           </form>
-          <div class="catalog-price-range">
-            <!-- Тут ползунок с ценой -->
-          </div>
-          <div class="catalog-buttons">
+          <li class="catalog-price-range">
+            <label class="price-range">Стоимость, ₽:<input type="text" name="price"></label>
+            <input type="range">
+          </li>
+          <li class="catalog-buttons">
             <button class="button" type="submit">Применить</button>
             <button class="button" type="reset">Сбросить</button>
-          </div>
+          </li>
         </section>
         <section class="searh-hotels">
           <div class="search-hotels-search">
@@ -90,18 +96,18 @@
               </select>
             </div>
             <div class="button-sort">
-            <a class="button-table" href="#" >
-              <img class="button-logo" src="images/table.svg" widht="16px" height="14px" alt="table">
-              <span class="visually-hidden">Показать таблицу</span>
-            </a>
-            <a class="button-slideshow" href="#">
-              <img class="button-logo" src="images/slide.svg" widht="16px" height="14px" alt="slide">
-              <span class="visually-hidden">Показать слайды</span>
-            </a>
-            <a class="button-list" href="#">
-              <img class="button-logo" src="images/list.svg" widht="16px" height="14px" alt="list">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+              <a class="button-table" href="#">
+                <img class="button-logo" src="images/table.svg" widht="16px" height="14px" alt="table">
+                <span class="visually-hidden">Показать таблицу</span>
+              </a>
+              <a class="button-slideshow" href="#">
+                <img class="button-logo" src="images/slide.svg" widht="16px" height="14px" alt="slide">
+                <span class="visually-hidden">Показать слайды</span>
+              </a>
+              <a class="button-list" href="#">
+                <img class="button-logo" src="images/list.svg" widht="16px" height="14px" alt="list">
+                <span class="visually-hidden">Показать список</span>
+              </a>
             </div>
           </div>
           <ul class="hotel-list">
