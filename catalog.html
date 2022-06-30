@@ -56,34 +56,53 @@
           </li>
         </ul>
         <section class="catalog-hotels">
-          <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <ul class="catalog-filter-container">
-              <li class="catalog-wrapper">
-                <p class="catalog-filter-title">Инфраструктура:</p>
-                <label class="control">Бассейн <input class="control-input" type="checkbox" name="pool" checked>
-                </label>
-                <label class="control">Парковка <input class="control-input" type="checkbox" name="carpark"
-                    checked></label>
-                <label class="control">Wi-Fi <input class="control-input" type="checkbox" name="wifi"></label>
-              </li>
-              <li class="catalog-wrapper">
-                <p class="catalog-filter-title">Тип жилья:</p>
-                <label class="control">Гостиница<input class="control-input" type="radio" name="product-group"
-                    checked></label>
-                <label class="control">Мотель<input class="control-input" type="radio" name="product-group"></label>
-                <label class="control">Апартаменты<input class="control-input" type="radio"
-                    name="product-group"></label>
-              </li>
-          </form>
-          <li class="catalog-price-range">
-            <label class="price-range">Стоимость, ₽:<input type="text" name="price"></label>
-            <input type="range">
-          </li>
-          <li class="catalog-buttons">
-            <button class="button" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
-          </li>
+          <div class="catalog-filter-container">
+            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="catalog-filter-wrapper">
+                <div class="infra-filter">
+                  <p class="catalog-filter-title">Инфраструктура:</p>
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="pool" checked>
+                    <span> Бассейн</span>
+                  </label>
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="carpark" checked>
+                    <span>Парковка</span>
+                  </label>
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="wifi">
+                    <span>Wi-Fi</span>
+                  </label>
+                </div>
+                <div class="appartments-filter">
+                  <p class="catalog-filter-title">Тип жилья:</p>
+                  <label class="control">
+                    <input class="control-input" type="radio" name="product-group" checked>
+                    <span>Гостиница</span>
+                  </label>
+                  <label class="control">
+                    <input class="control-input" type="radio" name="product-group">
+                    <span>Мотель</span>
+                  </label>
+                  <label class="control">
+                    <input class="control-input" type="radio" name="product-group">
+                    <span>Апартаменты</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+            <div class="priceandbutton">
+              <div class="price-range-wrapper">
+                <label class="price-range">Стоимость, ₽:<input type="text" name="price"></label>
+                <!-- ползунок тут -->
+              </div>
+              <div class="button-filter">
+                <button class="button" type="submit">Применить</button>
+                <button class="button" type="reset">Сбросить</button>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="searh-hotels">
           <div class="search-hotels-search">
@@ -121,7 +140,12 @@
                 <span class="hotel-card-hotel-price">От 4000 ₽</span>
                 <a class="additional-button button" href="#">подробнее</a>
                 <a class="hotel-card-button button" href="#">в избранное</a>
-                <img class="hotel-card-image" src="images/star.svg" widht="18px" height="17px" alt="star">
+                <div class="exp">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                </div>
                 <p class="hotel-raiting-text">Рейтинг: <span class="item-rating">8,5</span></p>
               </div>
             </li>
@@ -135,7 +159,12 @@
                 <span class="hotel-card-hotel-price">От 5000 ₽</span>
                 <a class="additional-button button" href="#">подробнее</a>
                 <a class="hotel-card-button button" href="#">в избранном</a>
-                <img class="hotel-card-image" src="images/star.svg" widht="18px" height="17px" alt="star">
+                <div class="exp">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                </div>
                 <p class="hotel-raiting-text">Рейтинг: <span class="item-rating">9,2</span></p>
               </div>
             </li>
@@ -149,7 +178,11 @@
                 <span class="hotel-card-hotel-price">От 2500 ₽</span>
                 <a class="additional-button button" href="#">подробнее</a>
                 <a class="hotel-card-button button" href="#">в избранное</a>
-                <img class="hotel-card-image" src="images/star.svg" widht="18px" height="17px" alt="star">
+                <div class="exp">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                </div>
                 <p class="hotel-raiting-text">Рейтинг: <span class="item-rating">6,9</span></p>
               </div>
             </li>
@@ -163,7 +196,10 @@
                 <span class="hotel-card-hotel-price">От 1500 ₽</span>
                 <a class="additional-button button" href="#">подробнее</a>
                 <a class="hotel-card-button button" href="#">в избранное</a>
-                <img class="hotel-card-image" src="images/star.svg" widht="18px" height="17px" alt="star">
+                <div class="exp">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                  <img class="hotel-card-star" src="images/star.svg" alt="star">
+                </div>
                 <p class="hotel-raiting-text">Рейтинг: <span class="item-rating">5,0</span></p>
               </div>
             </li>

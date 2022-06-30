@@ -157,12 +157,12 @@ body {
 
 .sedona {
   display: block;
-  padding-top: px;
+  padding-top: 60px;
   margin: 0 auto;
 }
 
 .sedona-title {
-  padding-top: 146px;
+
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -204,11 +204,11 @@ body {
 .sedona-city-txt {
   display: flex;
   flex-direction: column;
+  width: 230px;
+  margin: 0;
   padding-left: 85px;
   padding-right: 85px;
   padding-top: 90px;
-  margin: 0;
-
 }
 
 .sedona-city-text-title {
@@ -246,7 +246,8 @@ body {
 }
 
 .attractions-items {
-  padding: 80px 85px;
+  width: 240px;
+  padding: 80px;
 }
 
 .attractions-title {
@@ -403,6 +404,7 @@ body {
   margin: 0;
   padding: 0;
   padding-left: 70px;
+  padding-bottom: 40px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -416,19 +418,54 @@ body {
 }
 
 .catalog-filter-container {
-  display: grid;
-  grid-template-columns: 150px 150px 300px 160px;
-  column-gap: 70px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  padding-left: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+
 }
 
-.catalog-wrapper {
+.catalog-filter-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 70px;
+  padding-left: 70px;
+
+}
+
+.infra-filter {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+}
+
+.appartments-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceandbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 70px;
+}
+
+.price-range-wrapper,
+.price-range {
+  display: flex;
+  flex-direction: column;
+  padding-right: 70px;
+  gap: 30px;
+}
+
+.button-filter {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
 }
 
 .catalog-filter-title {
@@ -442,6 +479,10 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  padding:0;
+  margin:0;
+  padding-bottom:15px;
+
 }
 
 .catalog-price-range {
@@ -451,10 +492,9 @@ body {
   padding: 40px;
 }
 
-.catalog-buttons {
+.button-filter {
   max-width: 200px;
   max-height: 50px;
-  padding-top: 60px;
 }
 
 /* hotel sorting */
@@ -499,8 +539,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   margin: 0;
+  padding-left: 73px;
   margin-bottom: 66px;
-  gap: 18px;
+
 }
 
 .hotel-card-link {
@@ -515,34 +556,42 @@ body {
 .hotel-card-container {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 20px;
+  width: 300px;
   gap: 16px;
+  padding-bottom: 20px;
 }
 
 .hotel-card-hotel {
   grid-column: 1/2;
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
 .hotel-card-hotel-price {
   grid-column: 2/3;
+  padding-left: 20px;
 }
 
 .additional-button {
   grid-column: 1/2;
+  margin-left: 20px;
 }
 
 .hotel-card-button {
   grid-column: 2/3;
 }
 
-.hotel-card-image {
-  grid-column: 1/2;
+.exp {
+  padding-left: 20px;
+}
 
+.hotel-card-star {
+  width: 18px;
+  height: 17px;
 }
 
 .hotel-raiting-text {
   grid-column: 2/3;
+  margin: 0;
 }
 
 .hotel-card-title {
