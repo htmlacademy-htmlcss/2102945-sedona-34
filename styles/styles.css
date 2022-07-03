@@ -43,19 +43,20 @@ body {
 
 /* buttons */
 .button {
+  display: inline-block;
   max-height: 200px;
   font-family: inherit;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
+  border:none;
   color: #ffffff;
-  padding-top: 9px;
-  padding-bottom: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding:9px 15px;
+  margin-top:14px;
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .subscriber-button {
@@ -67,6 +68,8 @@ body {
   background-color: #82B3D3;
   text-decoration: none;
   text-transform: uppercase;
+  padding:12px 15px;
+
 }
 
 .hotel-card-button {
@@ -105,23 +108,29 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 450px;
   list-style: none;
 }
-
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 24px 12px;
+  fill: black;
+}
 .navigation-user {
   max-width: 300px;
   margin-left: auto;
 }
 
 .navigation-link {
+  position:relative;
   display: block;
-  padding-top: 20px;
-  padding-bottom: 19px;
-  padding-right: 17px;
-  padding-left: 34px;
+  padding:20px 17px;
   font-size: 20px;
   line-height: 26px;
+  text-align: center;
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
@@ -131,11 +140,12 @@ body {
   min-width: 20px;
   min-height: 20px;
 }
-
+.button-small{
+  padding: 9px 15px;
+}
 .main-container {
   flex-grow: 1;
   padding-top: 52px;
-  padding-bottom: 45px;
 }
 
 .main-index {
@@ -157,7 +167,8 @@ body {
 
 .sedona {
   display: block;
-  padding-top: 60px;
+  padding:0;
+  padding-top: 145px;
   margin: 0 auto;
 }
 
@@ -197,18 +208,18 @@ body {
 
 .sedona-city-text {
   display: flex;
-  background-color: #82B3D3;
-  color: #FFFFFF;
+flex-direction: row;
+margin:0;
+padding:0;
 }
 
 .sedona-city-txt {
   display: flex;
-  flex-direction: column;
-  width: 230px;
-  margin: 0;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-top: 90px;
+  flex-direction:column;
+  padding:0 86px;
+  padding-top:50px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
 }
 
 .sedona-city-text-title {
@@ -250,20 +261,6 @@ body {
   padding: 80px;
 }
 
-.attractions-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
-.attractions-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-}
-
 .diablo-bridge-text {
   display: flex;
   flex-direction: row-reverse;
@@ -301,7 +298,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-
 }
 
 .attractions-description {
@@ -331,7 +327,11 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-transform: uppercase;
+}
+.button-search {
+  width:574px;
+  padding: 12px 15px;
+  margin-top:42px;
 }
 
 /*subscribe*/
@@ -348,6 +348,8 @@ body {
 }
 
 .subscribe-title {
+  padding:0;
+  margin:0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -359,23 +361,43 @@ body {
   font-size: 22px;
   line-height: 26px;
 }
-
+.subscriber-button {
+  width:200px;
+}
 /*footer*/
+
 .page-footer-container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 1200px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom:35px;
 }
 
 .footer-social-list {
-  display: flex;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   width: 140px;
-  margin-right: 250px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 70px;
 }
-
+.footer-contacts-address-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.footer-contacts {
+  padding-left: 250px;
+}
 .footer-academy {
   margin-left: auto;
   max-width: 120px;
@@ -713,26 +735,5 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  color: #000000;
-}
-
-/* footer */
-.footer-social-list {
-  padding: 0;
-  margin: 0;
-  margin-left: 80px;
-}
-
-.footer-contacts {
-  padding-left: 250px;
-  padding-bottom: 35px;
-}
-
-.footer-contacts-address-phone {
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
   color: #000000;
 }
