@@ -60,18 +60,97 @@ body {
 }
 
 .subscriber-button {
+  display:inline;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
   text-decoration: none;
   text-transform: uppercase;
-  padding:12px 15px;
 
 }
-
+.enter-button{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.hotel-fav-button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+}
+.button:hover{
+background-color: #615048;
+}
+.button:focus {
+  background-color:#615048;
+}
+.button:active {
+  background-color:#756157;
+}
+.button:disabled {
+  background-color:#E5E5E5;;
+}
+.subscriber-button:hover,
+.enter-button:hover,
+.hotel-card-button:hover {
+  background-color:#68A2CA;
+}
+.subscriber-button:focus,
+.enter-button:focus,
+.hotel-card-button:focus{
+  background-color:#68A2CA;
+}
+.subscriber-button:active,
+.enter-button:active,
+.hotel-card-button:active{
+  background-color:#82B3D3;
+}
+.subscriber-button:disabled,
+.enter-button:disabled,
+.hotel-card-button:disabled{
+  background-color:#E5E5E5;;
+}
+.hotel-fav-button:hover{
+  background-color:#6C9E42
+}
+.hotel-fav-button:focus{
+  background-color:#6C9E42;
+}
+.hotel-fav-button:active{
+  background-color:#7DB54F;
+}
+.hotel-fav-button:disabled{
+  background-color: #E5E5E5
+}
+.image-social:hover{
+  background-color:#68A2CA;;
+}
+.image-social:focus{
+  background-color:#68A2CA;
+}
+.image-social:active{
+  background-color:rgba(104, 162, 202, 0.3);
+}
+.button-table:hover{
+  background-color:red
+}
+.button-table:focus{
+  background-color:red
+}
+.button-table:active{
+  background-color:red
+}
 .hotel-card-button {
   font-size: 16px;
   line-height: 20px;
@@ -110,6 +189,10 @@ body {
   padding: 0;
   list-style: none;
 }
+.active {
+  border-bottom: 2px solid #756257;
+}
+
 .navigation-icon {
   position: absolute;
   top: 0;
@@ -230,6 +313,7 @@ padding:0;
 }
 
 .sedona-city-text-description {
+
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -361,9 +445,7 @@ padding:0;
   font-size: 22px;
   line-height: 26px;
 }
-.subscriber-button {
-  width:200px;
-}
+
 /*footer*/
 
 .page-footer-container {
@@ -395,12 +477,30 @@ padding:0;
   text-transform: uppercase;
   color: #000000;
 }
+.footer-contacts-address-phone:hover {
+  background-color:#756157;
+}
+.footer-contacts-address-phone:focus{
+  background-color:#756157;
+}
+.footer-contacts-address-phone:active{
+  background-color:rgba(117, 97, 87, 0.3);
+}
 .footer-contacts {
   padding-left: 250px;
 }
 .footer-academy {
   margin-left: auto;
   max-width: 120px;
+}
+.html-academy:hover{
+  background-color:#756157;
+}
+.html-academy:focus{
+  background-color:#756157;
+}
+.html-academy:active{
+  background-color:rgba(117, 97, 87, 0.3);
 }
 
 /*catalog.html*/
@@ -413,7 +513,6 @@ padding:0;
 }
 
 .inner-header-title {
-  font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   padding: 0;
@@ -423,15 +522,18 @@ padding:0;
 
 .breadcrumbs {
   display: flex;
+  gap:10px;
   margin: 0;
   padding: 0;
-  padding-left: 70px;
-  padding-bottom: 40px;
+  padding-top:14px;
+  padding-left: 72px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   list-style: none;
 }
+
 
 .catalog-hotels {
   padding: 0;
@@ -455,12 +557,14 @@ padding:0;
   padding: 0px;
   gap: 70px;
   padding-left: 70px;
+  padding-top:20px;
 
 }
 
 .infra-filter {
   display: flex;
   flex-direction: column;
+
 }
 
 .appartments-filter {
@@ -553,7 +657,10 @@ padding:0;
 }
 
 .button-sort {
+  display: inline-block;
+box-sizing: border-box;
   padding-left: 80px;
+
 }
 
 /* Hotel cards */
@@ -687,6 +794,24 @@ padding:0;
   background-color: #F2F2F2;
 }
 
+.page-link:hover{
+  background-color:#68A2CA;
+}
+.page-link:focus{
+  background-color:#68A2CA;
+}
+.page-link:active{
+  background-color:#82B3D3;
+}
+.page-link-main:hover{
+background-color:#F2F2F2
+}
+.page-link-main:focus{
+background-color:#F2F2F2;
+}
+.page-link-main:active{
+background-color:#F2F2F2;
+}
 .select-hotel-sort {
   font-weight: 400;
   font-size: 18px;
