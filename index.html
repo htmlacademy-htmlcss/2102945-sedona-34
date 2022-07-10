@@ -178,17 +178,51 @@
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-academy">
-          <a href=" https://htmlacademy.ru/"><img class="html-academy" src="images/academy.svg" widht="114.9px" height="32.9px" alt="htmlacademy"></a>
+          <a href=" https://htmlacademy.ru/"><img class="html-academy" src="images/academy.svg" widht="114.9px"
+              height="32.9px" alt="htmlacademy"></a>
         </section>
       </div>
     </footer>
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+          <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="booking-form-enter">
+
+              <label class="form-label" for="booking-enter">
+              <input class="field" type="text" id="booking-enter" name="booking-enter" placeholder="27 апреля 2020">
+              <span class="booking-date">Дата заезда:</span>
+            </label>
+            </p>
+            <p class="booking-form-exit">
+
+              <label class="form-label" for="booking-exit">
+              <input class="field" type="text" id="booking-exit" name="booking-exit" placeholder="1 сентября 2021">
+              <span class="booking-date">Дата выезда:</span>
+            </label>
+            </p>
+            <p class="appointment-form-adult">
+              <label class="form-label" for="appointment-adult">
+
+              <input class="field" type="text" id="appointment-adult" name="appointment-adult"
+                placeholder="2">
+                <span class="booking-date">Взрослые:</span>
+              </label>
+            </p>
+            <p class="appointment-form-child">
+              <label class="form-label" for="appointment-child">
+              <input class="field" type="text" id="appointment-child" name="appointment-child" placeholder="1">
+              <span class="booking-date">Дети:</span>
+            </label>
+            </p>
+            <button class="button booking-submit" type="submit">Записаться</button>
+          </form>
+        </section>
         </section>
       </div>
     </div>
