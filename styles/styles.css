@@ -23,7 +23,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
@@ -337,11 +336,13 @@ body {
   text-transform: capitalize;
   color: #000000;
 }
-.number-like{
+
+.number-like {
   position: relative;
-  left:7px;
-  top:-5px;
+  left: 7px;
+  top: -5px;
 }
+
 .navigation-user .navigation-link {
   min-width: 20px;
   min-height: 20px;
@@ -572,14 +573,23 @@ body {
 
 .field {
   background: #F2F2F2;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px 0px 0px 10px;
   width: 600px;
   height: 60px;
   border-style: none;
-  border-radius: 0px 10px 10px 0px;
+
 
 }
 
+.field::placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.6;
+}
 
 .subscribe-title {
   padding: 0;
@@ -677,9 +687,11 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 .modal-container-close {
   display: none;
 }
+
 .modal {
   position: relative;
   margin: auto;
@@ -747,6 +759,7 @@ body {
 }
 
 .form-search-field {
+
   width: 420px;
   box-sizing: border-box;
   padding-top: 15px;
@@ -770,16 +783,19 @@ body {
 
 .form-search-field:hover {
   background: #E6E6E6;
+
 }
 
 .form-search-field:focus {
   background: #E6E6E6;
-  border: 3px solid #83B3D3;
+  outline: none;
+  box-shadow: 0 0 0 3px #83B3D3;
+
 }
 
 .form-search-field:active {
   background: #FFFFFF;
-  border: 2px solid #000000;
+  box-shadow: 0 0 0 3px #000000;
 }
 
 .form-search-field::placeholder {
@@ -809,6 +825,7 @@ body {
 }
 
 .form-label {
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -818,6 +835,7 @@ body {
 }
 
 .date-error {
+  font-family: "PT Sans", Arial, sans-serif;
   position: absolute;
   right: 28.58%;
   top: 38.31%;
@@ -829,6 +847,7 @@ body {
 }
 
 .date-accept {
+  font-family: "PT Sans", Arial, sans-serif;
   position: absolute;
   right: 21%;
   top: 60%;
@@ -846,6 +865,7 @@ body {
 }
 
 .people {
+  position: relative;
   display: flex;
   flex-direction: row;
   gap: 102px;
@@ -921,31 +941,31 @@ body {
 
 .plus-adult {
   position: absolute;
-  top: 357px;
-  left: 320px;
+  top: 34px;
+  left: 250px;
   border-style: none;
   opacity: 0.3;
 }
 
 .minus-adult {
   position: absolute;
-  top: 354px;
-  left: 250px;
+  top: 30px;
+  left: 180px;
   border-style: none;
   opacity: 0.3;
 }
 
 .plus-child {
   position: absolute;
-  top: 357px;
-  left: 610px;
+  top: 34px;
+  left: 540px;
   opacity: 0.3;
 }
 
 .minus-child {
   position: absolute;
-  top: 354px;
-  left: 535px;
+  top: 30px;
+  left: 470px;
   opacity: 0.3;
 }
 
@@ -1000,12 +1020,14 @@ body {
 
 .search-button:focus {
   background: #68A2CA;
-  border: 3px solid #756257;
+  box-shadow: 1px 0 0 2px #756257 inset;
+
 }
 
 .search-button:active {
   background: #68A2CA;
 }
+
 /* tooltip */
 .tooltip {
   position: absolute;
@@ -1057,6 +1079,7 @@ body {
 }
 
 .tooltip-text {
+
   background-color: #242424;
   color: #ffffff;
   font-style: normal;
