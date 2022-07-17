@@ -27,7 +27,8 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background: #FFFFFF;
+  background:#f2f2f2;
+
 }
 
 .visually-hidden {
@@ -283,6 +284,8 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
 }
 
 .navigation-logo {
@@ -341,9 +344,9 @@ body {
 }
 
 .navigation-link {
+  padding: 20px 17px;
   position: relative;
   display: block;
-  padding: 20px 17px;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
@@ -367,26 +370,23 @@ body {
   flex-grow: 1;
 }
 
-.main-welcome {
-  padding-top: 52px;
-}
 
-.main-index {
+.main-welcome {
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin: 0 auto;
+  padding-top: 52px;
+  padding-bottom:83px;
+  background-color: #464343;
 }
 
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
 }
-
-.hotel-sedona {
-  padding-top: 35px;
-}
-
 .welcome-logo {
   display: block;
   margin: 0 auto;
@@ -395,8 +395,9 @@ body {
 .sedona {
   display: block;
   padding: 0;
-  padding-top: 145px;
   margin: 0 auto;
+  padding-top:63px;
+
 }
 
 .sedona-title {
@@ -406,6 +407,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+
 }
 
 .sedona-description {
@@ -414,6 +416,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+
 }
 
 
@@ -422,6 +425,7 @@ body {
 
 .sedona-city {
   padding-top: 90px;
+
 }
 
 .attractions-list {
@@ -546,8 +550,8 @@ body {
   padding-top: 91px;
   padding-bottom: 93px;
   text-align: center;
-  width: 700px;
   margin: 0 auto;
+
 }
 
 .search-title {
@@ -576,7 +580,7 @@ body {
   width: 1200px;
   height: 411px;
   margin: 0 auto;
-  padding-top: 94px;
+  background-color: #6b6868;
 }
 
 .subscribe-form {
@@ -584,7 +588,11 @@ body {
   padding-left: 200px;
   padding-top: 46px;
 }
-
+.subscribe-rassilka {
+  padding-top:94px;
+  padding-left:20px;
+  padding-right:20px;
+}
 
 .field {
   font-family: "PT Sans", Arial, sans-serif;
@@ -636,8 +644,10 @@ body {
   align-items: center;
   width: 1200px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  background-color: #FFFFFF;
+  padding-top:45px;
+  padding-bottom:35px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
 }
 
 .footer-social-list {
@@ -1133,12 +1143,13 @@ body {
 }
 
 /*catalog.html*/
-.main-inner {
+.hotel-sedona {
   color: #ffffff;
   background-image: url("../images/catalog-background.jpg");
   background-size: 1200px 403px;
   background-repeat: no-repeat;
   margin: 0 auto;
+  background-color: #383938;
 }
 
 .inner-header-title {

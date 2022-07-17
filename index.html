@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
   </head>
 
   <body>
-    <header class="page-header">
-      <nav class="navigation">
+    <header class="page-header ">
+      <nav class="navigation main-container">
         <a class="navigation-logo" href="/index.html">
           <img src="images/logo.png" width=140px height=70px alt="CityofSedona">
         </a>
@@ -23,6 +24,7 @@
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
+
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
@@ -145,8 +147,9 @@
           <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </section>
         <section class="subscribe">
+        <div class="subscribe-rassilka">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <p class="subscribe-description">Только полезная информация и никакого спама,честное бойскаутское!Только полезная информация и никакого спама,честное бойскаутское!Только полезная информация и никакого спама,честное бойскаутское!Только полезная информация и никакого спама,честное бойскаутское!Только полезная информация и никакого спама,честное бойскаутское!Только полезная информация и никакого спама,честное бойскаутское!Только полезная информация и никакого спама,честное бойскаутское!Только полезная информация и никакого спама,честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscribe-email"></label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
@@ -154,6 +157,7 @@
             <button class="button subscriber-button" type="submit">Подписаться
             </button>
           </form>
+        </div>
         </section>
       </div>
     </main>
@@ -209,6 +213,7 @@
               <label class="form-label" for="booking-enter">Дата заезда:</label>
               <input class="form-search-field" type="text" id="booking-enter" name="booking-enter"
                 placeholder="27 апреля 2020">
+                <a href="#">
               <svg class="calendar" width="17" height="15" viewBox="0 0 17 15" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.8643 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000" />
@@ -219,12 +224,14 @@
                   d="M8.1143 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM10.3643 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.8643 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.6143 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM3.6143 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8.1143 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.3643 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.6143 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.6143 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"
                   fill="#000" />
               </svg>
+              </a>
               <span class="date-error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="booking-form-exit">
               <label class="form-label" for="booking-exit">Дата выезда: </label>
               <input class="form-search-field field-exit" type="text" id="booking-exit" name="booking-exit"
                 placeholder="1 сентября 2021">
+                <a href="#">
               <svg class="calendar" width="17" height="15" viewBox="0 0 17 15" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.8643 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000" />
@@ -235,6 +242,7 @@
                   d="M8.1143 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM10.3643 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.8643 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.6143 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM3.6143 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8.1143 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.3643 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.6143 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.6143 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"
                   fill="#000" />
               </svg>
+              </a>
               <span class="date-accept">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="people">
