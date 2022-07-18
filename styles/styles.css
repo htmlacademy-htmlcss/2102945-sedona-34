@@ -275,7 +275,7 @@ body {
 .page-header {
   color: #000000;
   font-weight: 800;
-  height: 65px;
+  min-height: 65px;
 
 }
 
@@ -289,7 +289,7 @@ body {
 }
 
 .navigation-logo {
-  height: 7px;
+  height: 0px;
   margin: 0;
   padding: 0;
   padding-left: 70px;
@@ -297,7 +297,7 @@ body {
 }
 
 .navigation-logo:default {
-  transform: scale(1.2);
+  outline: none;
 }
 
 .navigation-logo:hover {
@@ -395,7 +395,6 @@ body {
   position: relative;
   display: block;
   padding: 20px 17px;
-  min-height: 26px;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
@@ -1062,6 +1061,7 @@ body {
   left: 250px;
   border-style: none;
   opacity: 0.3;
+
 }
 
 .minus-adult {
@@ -1078,6 +1078,7 @@ body {
   top: 34px;
   left: 540px;
   opacity: 0.3;
+
 }
 
 .minus-child {
@@ -1085,6 +1086,7 @@ body {
   top: 30px;
   left: 470px;
   opacity: 0.3;
+
 }
 
 .minus-child.minus-adult:default {
