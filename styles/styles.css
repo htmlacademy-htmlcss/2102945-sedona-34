@@ -27,7 +27,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background:#f2f2f2;
+  background: #f2f2f2;
 
 }
 
@@ -285,16 +285,31 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation-logo {
-  width: 140px;
-  height: 70px;
+  height: 7px;
   margin: 0;
   padding: 0;
   padding-left: 70px;
-  padding-right: 47px;
+  padding-right: 27px;
+}
+
+.navigation-logo:default {
+  transform: scale(1.2);
+}
+
+.navigation-logo:hover {
+  transform: scale(1.2);
+}
+
+.navigation-logo:focus {
+  outline: none;
+}
+
+.navigation-logo:active {
+  transform: scale(1.5);
 }
 
 .navigation-list {
@@ -302,8 +317,8 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  padding-right: 10px;
   list-style: none;
-
 }
 
 /* Underline  */
@@ -311,42 +326,76 @@ body {
   content: "";
   position: absolute;
   left: 16px;
-  bottom: -1px;
+  bottom: -2px;
   width: 68px;
   background-color: #756257;
-  border: 2px solid #756257;
+  border: 1px solid #756257;
 }
 
 .active-hotel::before {
   content: "";
   position: absolute;
   left: 17px;
-  bottom: -1px;
+  bottom: -2px;
   width: 93px;
   background-color: #756257;
-  border: 2px solid #756257;
+  border: 1px solid #756257;
 }
 
-.navigation-icon {
+.navigation-search {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 5px;
   margin: 24px 12px;
-  fill: black;
+}
+
+.navigation-search:default,
+.navigation-favorite:default {
+  transform: scale(1.2);
+}
+
+.navigation-search:hover,
+.navigation-favorite:hover {
+  transform: scale(1.2);
+}
+
+.navigation-search:focus,
+.navigation-favorite:focus {
+  outline: none;
+}
+
+.navigation-search:active,
+.navigation-favorite:active {
+  transform: scale(1.5);
+}
+
+.navigation-favorite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -10px;
+  margin: 24px 12px;
 }
 
 .navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   max-width: 300px;
   margin-left: auto;
   padding-right: 70px;
 }
 
 .navigation-link {
-  padding: 20px 17px;
   position: relative;
   display: block;
+  padding: 20px 17px;
+  min-height: 26px;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
@@ -355,9 +404,25 @@ body {
   color: #000000;
 }
 
+.navigation-link:default {
+  color: rgb(147, 144, 144);
+}
+
+.navigation-link:hover {
+  color: rgb(81, 78, 78);
+}
+
+.navigation-link:focus {
+  color: rgb(154, 149, 149);
+}
+
+.navigation-link :active {
+  color: rgb(147, 144, 144);
+}
+
 .number-like {
   position: relative;
-  left: 7px;
+  left: -3px;
   top: -5px;
 }
 
@@ -377,7 +442,7 @@ body {
   background-repeat: no-repeat;
   margin: 0 auto;
   padding-top: 52px;
-  padding-bottom:83px;
+  padding-bottom: 83px;
   background-color: #464343;
 }
 
@@ -385,8 +450,9 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
+
 .welcome-logo {
   display: block;
   margin: 0 auto;
@@ -396,7 +462,7 @@ body {
   display: block;
   padding: 0;
   margin: 0 auto;
-  padding-top:63px;
+  padding-top: 35px;
 
 }
 
@@ -416,7 +482,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
-
+  padding-top: 5px;
 }
 
 
@@ -424,7 +490,7 @@ body {
 
 
 .sedona-city {
-  padding-top: 90px;
+  padding-top: 70px;
 
 }
 
@@ -547,7 +613,7 @@ body {
 
 /* Search */
 .search {
-  padding-top: 91px;
+  padding-top: 70px;
   padding-bottom: 93px;
   text-align: center;
   margin: 0 auto;
@@ -562,11 +628,13 @@ body {
 }
 
 .search-description {
+
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   margin: 0;
   margin-bottom: 56px;
+  padding-top: 2px;
 }
 
 
@@ -585,13 +653,14 @@ body {
 
 .subscribe-form {
   display: flex;
-  padding-left: 200px;
-  padding-top: 46px;
+  padding-left: 180px;
+  padding-top: 26px;
 }
+
 .subscribe-rassilka {
-  padding-top:94px;
-  padding-left:20px;
-  padding-right:20px;
+  padding-top: 94px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .field {
@@ -602,8 +671,8 @@ body {
   line-height: 21px;
   background: #F2F2F2;
   border-radius: 10px 0px 0px 10px;
-  width: 600px;
-  height: 60px;
+  width: 577px;
+  height: 57px;
   border-style: none;
   padding-left: 22px;
 
@@ -630,9 +699,14 @@ body {
 }
 
 .subscribe-description {
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
+  max-height: 52px;
+  padding-top: 7px;
 }
 
 /*footer*/
@@ -645,9 +719,9 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
-  padding-top:45px;
-  padding-bottom:35px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  padding-top: 45px;
+  padding-bottom: 35px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer-social-list {
@@ -657,7 +731,7 @@ body {
   gap: 26px;
   width: 140px;
   list-style: none;
-  padding-left: 70px;
+  padding-left: 80px;
   margin: 0;
 }
 
@@ -689,13 +763,14 @@ body {
 }
 
 .footer-contacts {
-  padding-left: 250px;
+  padding-left: 230px;
 }
 
 .footer-academy {
   margin-left: auto;
   margin-right: 70px;
   max-width: 120px;
+  margin-top: 4px;
 }
 
 .html-academy:default {
@@ -877,11 +952,14 @@ body {
   position: absolute;
   right: 28.58%;
   top: 38.31%;
+  padding-left: 100px;
+  min-height: 30px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #FF5757;
+
 }
 
 .date-accept {
@@ -890,6 +968,7 @@ body {
   right: 21%;
   top: 60%;
   bottom: 78.1%;
+  padding-left: 100px;
   display: flex;
   align-items: flex-end;
   color: #333333;
@@ -991,6 +1070,7 @@ body {
   left: 180px;
   border-style: none;
   opacity: 0.3;
+
 }
 
 .plus-child {
@@ -1096,7 +1176,6 @@ body {
   width: 25px;
   height: 25px;
   color: #242424;
-  display: block;
 
 }
 
@@ -1108,8 +1187,8 @@ body {
 
 .i-icon {
   position: relative;
-  top: -20px;
-  left: -11px;
+  top: -9px;
+  left: -17px;
   width: 1px;
   height: 6px;
   background: #FFFFFF;
